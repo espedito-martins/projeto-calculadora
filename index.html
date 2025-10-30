@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Pontos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="app.js" type="module"></script>
+</head>
+
+<body>
+  <main>
+    <h1>Gerenciador de Pontos</h1>
+
+    <div class="container-placar">
+      <h2>Total de Pontos:</h2>
+      <p id="total-pontos">0</p>
+    </div>
+
+    <form id="formulario-tarefa">
+      <input
+        class="input-tarefa"
+        id="input-tarefa"
+        type="text"
+        placeholder="Descrição da Tarefa (ex: estudar CSS)"
+      />
+      <input
+        class="input-pontos"
+        id="input-pontos"
+        type="number"
+        min="1"
+        value="10"
+      />
+      <button class="button-adicionar" id="adicionar-item" type="submit">
+        Adicionar
+      </button>
+    </form>
+
+    <div class="container-lista">
+      <h2>Tarefas em Aberto</h2>
+      <hr />
+
+      <ul id="lista-de-tarefas"></ul>
+
+      <p class="mensagem-lista-vazia"></p>
+    </div>
+  </main>
+</body>
+</html>

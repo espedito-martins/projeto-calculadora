@@ -1,0 +1,176 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* CONTAINER PRINCIPAL */
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* TÍTULOS */
+h1 {
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    color: #007bff; /* Azul primário */
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-family: 'Numans', serif;
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* PLACAR DE PONTOS */
+.container-placar {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #e6f3ff;
+}
+
+#total-pontos {
+    font-family: 'Krona One', sans-serif;
+    font-size: 2.5rem;
+    color: #28a745; /* Verde para destacar pontuação */
+    margin-top: 5px;
+}
+
+/* FORMULÁRIO */
+#formulario-tarefa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.input-tarefa {
+    flex-grow: 3;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.input-pontos {
+    flex-grow: 1;
+    max-width: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.button-adicionar {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.button-adicionar:hover {
+    background-color: #0056b3;
+}
+
+/* LISTA DE TAREFAS */
+.container-lista {
+    margin-top: 30px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+#lista-de-tarefas {
+    list-style: none;
+    padding: 0;
+}
+
+/* ESTILO DO ITEM DE TAREFA */
+.item-tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s;
+}
+
+.item-tarefa:hover {
+    background-color: #e9ecef;
+}
+
+.info-tarefa {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.nome-tarefa {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+.pontos-tarefa {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 3px;
+}
+
+/* ESTILO DO BOTÃO DE REMOÇÃO (X) */
+.button-remover {
+    background: none;
+    border: none;
+    color: #dc3545; /* Cor vermelha para indicar remoção */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    line-height: 1;
+    margin-left: 15px;
+}
+
+.button-remover:hover {
+    color: #a71d2a;
+}
+
+/* MENSAGEM DE LISTA VAZIA (controlada pelo JS) */
+.mensagem-lista-vazia {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+    font-style: italic;
+    display: block; /* Mantenha 'block' por padrão e o JS muda para 'none' */
+}
