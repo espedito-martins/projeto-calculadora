@@ -5,6 +5,8 @@ const lista = document.getElementById('lista-de-tarefas');
 const placarEl = document.getElementById('total-pontos');
 const mensagemVaziaEl = document.querySelector('.mensagem-lista-vazia');
 
+// Modifiquei esse arquivo
+
 let totalPontos = 0;
 function atualizarPlacar() {
   placarEl.textContent = totalPontos;
