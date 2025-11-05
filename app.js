@@ -6,7 +6,7 @@ const placarEl = document.getElementById('total-pontos');
 const mensagemVaziaEl = document.querySelector('.mensagem-lista-vazia');
 
 // Adicionei nova mudança
-// Adicionei novo comentario
+// Capitão América Guerra Civil
 
 let totalPontos = 0;
 function atualizarPlacar() {
