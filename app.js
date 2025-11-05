@@ -8,6 +8,7 @@ const mensagemVaziaEl = document.querySelector('.mensagem-lista-vazia');
 // Adicionei nova mudança
 // Capitão América Guerra Civil
 
+
 let totalPontos = 0;
 function atualizarPlacar() {
   placarEl.textContent = totalPontos;
